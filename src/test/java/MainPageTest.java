@@ -11,11 +11,11 @@ public class MainPageTest {
     private static MainPage mainPage;
 
     @BeforeAll
-    public static void setUp(){
+    public static void setUp() {
         WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
+        driver = new ChromeDriver();
         driver.get("https://otus.ru/");
-        mainPage=new MainPage(driver);
+        mainPage = new MainPage(driver);
     }
 
     @Test
@@ -25,9 +25,9 @@ public class MainPageTest {
     }
 
     @AfterAll
-    public static void tearDown(){
-         if(driver!=null){
-             driver.close();
-         }
+    public static void tearDown() {
+        if (driver != null) {
+            driver.close();
+        }
     }
 }

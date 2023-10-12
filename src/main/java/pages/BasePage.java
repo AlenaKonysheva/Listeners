@@ -1,4 +1,9 @@
 package pages;
 
-public class BasePage {
+import org.openqa.selenium.WebDriver;
+
+public class BasePage extends AbsBasePage{
+    public BasePage(WebDriver driver, String path) {
+        super(driver, path);
+    }
 }
